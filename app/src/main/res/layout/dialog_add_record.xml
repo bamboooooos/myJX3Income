@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_add_record_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="角色名称" />
+
+    <EditText
+        android:id="@+id/et_add_record_income"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_add_record_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="收入"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_add_record_consume"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_add_record_income"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:hint="消费" />
+
+    <EditText
+        android:id="@+id/et_add_record_other_income"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_add_record_consume"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:hint="额外收入" />
+
+    <EditText
+        android:id="@+id/et_remark"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_add_record_other_income"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="备注" />
+
+    <TextView
+        android:id="@+id/tv_rewards"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_remark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="2"
+        android:scrollbars = "vertical"/>
+
+    <Spinner
+        android:id="@+id/sp_add_record_instance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rewards"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/iv_add_reward"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/sp_add_record_instance"
+        android:layout_marginTop="9dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/iv_inc_reward"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/sp_add_record_instance"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+    <Spinner
+        android:id="@+id/sp_add_record_reward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_add_record_instance"
+        android:layout_toRightOf="@id/iv_add_reward"
+        android:layout_toLeftOf="@id/iv_inc_reward"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <DatePicker
+        android:id="@+id/tp_add_record_battle_time"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/sp_add_record_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tp_add_record_battle_time"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_add_record_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="确定"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_add_record_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_add_record_confirm"
+            android:text="取消"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/raiyon/AndroidStudioProjects/MyJX3Income/app/src/main/res/layout/activity_main.xml" value="0.3038949275362319" />
+        <entry key="..\:/Users/raiyon/AndroidStudioProjects/MyJX3Income/app/src/main/res/layout/dialog_addRecord.xml" value="0.29936594202898553" />
+        <entry key="..\:/Users/raiyon/AndroidStudioProjects/MyJX3Income/app/src/main/res/layout/dialog_add_record.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/raiyon/AndroidStudioProjects/MyJX3Income/app/src/main/res/layout/incomeItem.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/raiyon/AndroidStudioProjects/MyJX3Income/app/src/main/res/layout/item_income.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
